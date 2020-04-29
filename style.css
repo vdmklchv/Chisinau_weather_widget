@@ -1,0 +1,41 @@
+*   {
+    border: 0;
+    margin: 0;
+}
+
+p   {
+    margin-bottom: 10px;
+}
+
+.container  {
+    border: 1px black solid;
+    float: left;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    min-width: 300px;
+}
+
+span    {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button.fetch_weather  {
+    font-size: 15px;
+    background-color: burlywood;
+    opacity: 0.8;
+    margin-top: 20px;
+    float: right;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.fetch_weather:hover    {
+    cursor: pointer;
+    background: green;
+    color: white;
+}
