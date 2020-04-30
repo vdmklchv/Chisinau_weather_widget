@@ -21,7 +21,8 @@ function fetchWeather()   {
             image.innerHTML = '<img src="./img/thunderstorm.svg">';
         } else if (condition.innerText === 'light rain')    {
             image.innerHTML = '<img src="./img/rain.svg">';
-        }
+        } else if (condition.innerText === 'few clouds')    {
+            image.innerHTML = '<img src="./img/broken_clouds.svg">';
     });
     let hours = new Date().getHours();
     let minutes = new Date().getMinutes();
