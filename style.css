@@ -39,3 +39,8 @@ button.fetch_weather  {
     background: green;
     color: white;
 }
+
+#time   {
+    font-style: italic;
+    font-size: 0.8em;
+}

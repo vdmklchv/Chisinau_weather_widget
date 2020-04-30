@@ -2,6 +2,7 @@ const data = document.querySelector('.data');
 const feelslike = document.querySelector('.feelslike');
 const condition = document.querySelector('.condition');
 const button = document.querySelector('.fetch_weather');
+const timeInfo = document.querySelector('#time');
 
 
 
@@ -12,10 +13,13 @@ function fetchWeather()   {
         feelslike.innerText = result.list[0].main.feels_like.toFixed(1);
         condition.innerText = result.list[0].weather[0].description;
     });
-
+    const hours = new Date().getHours();
+    const minutes = new Date().getMinutes();
+    timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
 };
 
-fetchWeather();
+
+    fetchWeather();
 
 button.addEventListener('click', () => {
     fetchWeather();
