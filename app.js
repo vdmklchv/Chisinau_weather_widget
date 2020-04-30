@@ -13,10 +13,12 @@ function fetchWeather()   {
         feelslike.innerText = result.list[0].main.feels_like.toFixed(1);
         condition.innerText = result.list[0].weather[0].description;
         if (condition.innerText === 'overcast clouds')    {
-            image.innerHTML = '<img src="./img/overcast.png">'
+            image.innerHTML = '<img src="./img/overcast.svg">';
         }
         else if (condition.innerText === "broken clouds")    {
-            image.innerHTML = '<img src="./img/broken_clouds.svg">'
+            image.innerHTML = '<img src="./img/broken_clouds.svg">';
+        } else if (condition.innerHTML === 'thunderstorm')  {
+            image.innerHTML = '<img src="./img/thunderstorm.svg">';
         }
     });
     let hours = new Date().getHours();
