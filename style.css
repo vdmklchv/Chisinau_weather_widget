@@ -13,7 +13,7 @@ p   {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
-    background-color: brown;
+    background-color: #6BC9A6;
     color: white;
     min-width: 300px;
     max-width: 300px;
@@ -26,7 +26,7 @@ span    {
 
 button.fetch_weather  {
     font-size: 15px;
-    background-color: burlywood;
+    background-color: lightgrey;
     opacity: 0.8;
     margin-top: 20px;
     float: right;
@@ -68,5 +68,5 @@ button.fetch_weather  {
 #time   {
     font-style: italic;
     font-size: 0.8em;
-    color: orange;
+    color: #366554;
 }
