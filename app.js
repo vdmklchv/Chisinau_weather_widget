@@ -17,8 +17,10 @@ function fetchWeather()   {
         }
         else if (condition.innerText === "broken clouds")    {
             image.innerHTML = '<img src="./img/broken_clouds.svg">';
-        } else if (condition.innerHTML === 'thunderstorm')  {
+        } else if (condition.innerText === 'thunderstorm')  {
             image.innerHTML = '<img src="./img/thunderstorm.svg">';
+        } else if (condition.innerText === 'light rain')    {
+            image.innerHTML = '<img src="./img/rain.svg">';
         }
     });
     let hours = new Date().getHours();

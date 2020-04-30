@@ -33,6 +33,7 @@ button.fetch_weather  {
     outline: none;
     border-radius: 5px;
     padding: 7px;
+    transition: 0.3s;
 }
 
 .data {
