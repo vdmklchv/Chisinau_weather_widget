@@ -13,8 +13,8 @@ function fetchWeather()   {
         feelslike.innerText = result.list[0].main.feels_like.toFixed(1);
         condition.innerText = result.list[0].weather[0].description;
     });
-    const hours = new Date().getHours();
-    const minutes = new Date().getMinutes();
+    let hours = new Date().getHours();
+    let minutes = new Date().getMinutes();
     if (minutes < 10)   {
         minutes = '0' + minutes;
     }
