@@ -17,13 +17,18 @@ function fetchWeather()   {
         }
         else if (condition.innerText === "broken clouds")    {
             image.innerHTML = '<img src="./img/broken_clouds.svg">';
-        } else if (condition.innerText === 'thunderstorm')  {
+        } 
+        else if (condition.innerText === 'thunderstorm')  {
             image.innerHTML = '<img src="./img/thunderstorm.svg">';
-        } else if (condition.innerText === 'light rain')    {
+        } 
+        else if (condition.innerText === 'light rain')    {
             image.innerHTML = '<img src="./img/rain.svg">';
-        } else if (condition.innerText === 'few clouds')    {
+        } 
+        else if (condition.innerText === 'few clouds')    {
             image.innerHTML = '<img src="./img/broken_clouds.svg">';
+        }
     });
+
     let hours = new Date().getHours();
     let minutes = new Date().getMinutes();
     if (minutes < 10)   {
@@ -33,18 +38,15 @@ function fetchWeather()   {
     if (hours < 10) {
         hours = '0' + hours;
     }
-    timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
+    timeInfo.innerText = `Last updated at: ${hours}:${minutes}`;
 
    
     setInterval(fetchWeather, 600000);
-};
+}
 
 
 fetchWeather();
 
 button.addEventListener('click', () => {
     fetchWeather();
-})
-
-
-
+});
