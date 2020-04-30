@@ -16,10 +16,11 @@ function fetchWeather()   {
     const hours = new Date().getHours();
     const minutes = new Date().getMinutes();
     timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
+    setInterval(fetchWeather, 3600000);
 };
 
 
-    fetchWeather();
+fetchWeather();
 
 button.addEventListener('click', () => {
     fetchWeather();
