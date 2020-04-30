@@ -3,7 +3,7 @@ const feelslike = document.querySelector('.feelslike');
 const condition = document.querySelector('.condition');
 const button = document.querySelector('.fetch_weather');
 const timeInfo = document.querySelector('#time');
-
+const image = document.querySelector('.weather-img')
 
 
 function fetchWeather()   {
@@ -23,6 +23,10 @@ function fetchWeather()   {
         hours = '0' + hours;
     }
     timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
+
+    if (condition.innerText = 'overcast clouds')    {
+        image.innerHTML = '<img src="./img/overcast.png">'
+    }
     setInterval(fetchWeather, 600000);
 };
 

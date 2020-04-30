@@ -7,7 +7,7 @@ p   {
     margin-bottom: 10px;
 }
 
-.container  {
+.container-data  {
     border: 1px black solid;
     float: left;
     padding: 10px 20px;
@@ -16,7 +16,10 @@ p   {
     background-color: brown;
     color: white;
     min-width: 300px;
+    max-width: 300px;
 }
+
+
 
 span    {
     font-weight: bold;
@@ -34,11 +37,35 @@ button.fetch_weather  {
     padding: 7px;
 }
 
+.data {
+    width: 75%;
+}
+
+.weather-img    {
+    width: 25%;
+}
+
+.dataimage  {
+    display: flex;
+}
+
+
+
 .fetch_weather:hover    {
     cursor: pointer;
     background: green;
     color: white;
 }
+
+
+.weather-img  img  {
+    display: block;
+    width: 100%;
+}
+
+
+
+
 
 #time   {
     font-style: italic;

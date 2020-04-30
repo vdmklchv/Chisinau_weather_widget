@@ -7,16 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class='container'>
-        <h1>Chisinau</h1>
-    <div>
-        <p>Current temperature: <span class='data'></span> <span>C</span></p>
-        <p>Feels like: <span class="feelslike"></span> <span>C</span></p>
-        <p>Weather condition: <span class="condition"></span></p>
-        <p id=time></p>
+    <div class='container-data'>
+        <div class = 'header'>
+            <h1>Chisinau</h1>
+        </div>
+        <div class = 'dataimage'>
+            <div class='data'>
+                <p>Current temperature: <span class='data'></span> <span>C</span></p>
+                <p>Feels like: <span class="feelslike"></span> <span>C</span></p>
+                <p>Weather condition: <span class="condition"></span></p>
+            </div>
+        <div class = 'weather-img'></div>
+        </div>
+        <div class='bottom'>
+            <p id=time></p>
+            <button class='fetch_weather'>Fetch Weather</button>
+        </div>
     </div>
-    <button class='fetch_weather'>Fetch Weather</button>
-    <script src="app.js"></script>
-    </div>
+        <script src="app.js"></script>
+
 </body>
 </html>
