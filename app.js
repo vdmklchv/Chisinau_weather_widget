@@ -15,8 +15,15 @@ function fetchWeather()   {
     });
     const hours = new Date().getHours();
     const minutes = new Date().getMinutes();
+    if (minutes < 10)   {
+        minutes = '0' + minutes;
+    }
+
+    if (hours < 10) {
+        hours = '0' + hours;
+    }
     timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
-    setInterval(fetchWeather, 3600000);
+    setInterval(fetchWeather(), 3600000);
 };
 
 
