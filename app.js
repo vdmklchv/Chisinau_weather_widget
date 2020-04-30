@@ -23,7 +23,7 @@ function fetchWeather()   {
         hours = '0' + hours;
     }
     timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
-    setInterval(fetchWeather(), 3600000);
+    setInterval(fetchWeather, 600000);
 };
 
 
