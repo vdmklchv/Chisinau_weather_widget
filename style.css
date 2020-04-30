@@ -43,4 +43,5 @@ button.fetch_weather  {
 #time   {
     font-style: italic;
     font-size: 0.8em;
+    color: orange;
 }
