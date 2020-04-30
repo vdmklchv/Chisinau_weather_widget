@@ -12,6 +12,12 @@ function fetchWeather()   {
         data.innerText = result.list[0].main.temp.toFixed(1);
         feelslike.innerText = result.list[0].main.feels_like.toFixed(1);
         condition.innerText = result.list[0].weather[0].description;
+        if (condition.innerText === 'overcast clouds')    {
+            image.innerHTML = '<img src="./img/overcast.png">'
+        }
+        else if (condition.innerText === "broken clouds")    {
+            image.innerHTML = '<img src="./img/broken_clouds.svg">'
+        }
     });
     let hours = new Date().getHours();
     let minutes = new Date().getMinutes();
@@ -24,9 +30,7 @@ function fetchWeather()   {
     }
     timeInfo.innerText = `Last updated at: ${hours}:${minutes}`
 
-    if (condition.innerText = 'overcast clouds')    {
-        image.innerHTML = '<img src="./img/overcast.png">'
-    }
+   
     setInterval(fetchWeather, 600000);
 };
 
